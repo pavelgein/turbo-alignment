@@ -301,7 +301,7 @@ class ChatDataset(AlignmentDataset[ChatDatasetRecord], ABC):
                     random_cut=random_cut,
                 )
                 # if len(input_ids) >= 8000:
-                    # raise ValueError(f'{len(input_ids)=}, which is >=8000')
+                #     raise ValueError(f'{len(input_ids)=}, which is >=8000')
 
             except ValueError as ex:
                 output.append(None)
