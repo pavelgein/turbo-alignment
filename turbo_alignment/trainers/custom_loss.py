@@ -41,7 +41,7 @@ class CustomLossTrainer(MultiGPUCherryPicksTrainer):
             **kwargs,
         )
 
-    def compute_loss(self, model, inputs, return_outputs=False):
+    def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
         """
         Modified original version, without manual label smoothing
         """
